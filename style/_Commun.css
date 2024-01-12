@@ -1,0 +1,25 @@
+* {
+  font-family: 'Shrikhand', serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --main-color: #9356DC;
+  --second-color: #FF79DA;
+  --third-color: #99E2D0;
+  --dark-gray: #353535;
+  --light-gray: #EAEAEA;
+  --backgroung-gray: #F6F6F6;
+}
+
+footer {
+  background-color: var(--dark-gray);
+  color: white;
+  padding: 22px 25px 22px 25px;
+  width: 100%;
+}
+
+footer .texte {
+  display: flex;
+  justify-content: baseline;
+}

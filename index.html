@@ -17,7 +17,7 @@
     <header>
         <img src="./Images/ohmyfood@2x.svg" alt="Logo OhMyFood">
         <nav>
-            <i class="fa-solid fa-location-dot" style="color: #353535;"></i><h3>Paris, Belleville</h3>
+            <i class="fa-solid fa-location-dot" style="color: #353535;"></i><input type="text" name="ville" id="ville" placeholder="Paris, Belleville">
         </nav>
     </header>
     <section class="section-boutton">
@@ -27,17 +27,11 @@
     </section>
     <section>
         <h2>Fonctionnement</h2>
-        <ul>
-            <li>
-            <i class="fa-solid fa-circle" style="color: #9457dd;"></i>1</i><i class="fa-solid fa-mobile-screen-button"></i><h4>Choisissez un restaurant</h4>
-            </li>
-            <li>
-            <i class="fa-solid fa-circle" style="color: #9457dd;"></i>2<i class="fa-solid fa-list-ul"></i><h4>Composez votre menu</h4>
-            </li>
-            <li>
-            <i class="fa-solid fa-circle" style="color: #9457dd;"></i>3<i class="fa-solid fa-store"></i><h4>Dégustez au restaurant</h4>
-            </li>
-        </ul>
+        <ol>
+            <li><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</li>
+            <li><i class="fa-solid fa-list-ul"></i>Composez votre menu</li>
+            <li><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
+        </ol>
     </section>
     <main>
         <!-- Section restaurants -->
@@ -56,7 +50,7 @@
                                         <h3 class="card-title">La palette du goût</h3>
                                         <p class="card-subtitle">Ménilmontant</p>
                                     </div>
-                                    <i class="fa-heart fa-solid"></i><i class="fa-heart fa-regular"></i>
+                                    <i class="fa-heart fa-solid heart-full"></i><i class="fa-heart fa-regular"></i>
                                 </div>
                             </article>
                         </a>
@@ -107,7 +101,7 @@
         <!-- </div> -->
     </main>
     
-    <footer>
+    <footer class="texte">
         <img src="./Images/ohmyfood-blanc.png" alt="Logo OhMyFood">
         <i class="fa-solid fa-utensils" style="color: #ffffff;"></i><h4>Proposez un restaurant</h4>
         <i class="fa-solid fa-handshake-angle" style="color: #ffffff;"></i><h4>Devenir partenaire</h4>

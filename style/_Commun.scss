@@ -17,9 +17,20 @@
     color: white;
     padding: 22px 25px 22px 25px;
     width: 100%;
-  }
-  
-  footer .texte {
-    display: flex;
-    justify-content: baseline;
+
+    footer .texte {
+      display: flex;
+      justify-content: baseline;
+    }
+
+    ul{
+      display: flex;
+      flex-direction: column;
+    }
+
+    li {
+      display: flex;
+      align-items: baseline;
+      gap: 9px;
+    }
   }

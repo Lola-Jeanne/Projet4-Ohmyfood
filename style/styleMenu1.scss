@@ -11,16 +11,23 @@ header img{
     .fa-arrow-left{
         font-size: 20px;
     }
+}
 
-    section img{
+
+main{
+    // background-color: var(--backgroung-gray);
+
+    img{
         width: 100%;
         height: 275px;
         object-fit: cover;
     }
-}
 
-main{
-    background-color: var(--backgroung-gray);
+    .menu{
+        background-color: var(--backgroung-gray);
+        border-radius: 30px 30px 0px 0px;
+        padding-top: -40px;
+    }
 
     h1{
         font-family: shrikhand;
@@ -32,7 +39,7 @@ main{
         font-weight: 100;
         font-size: 16px;
         text-decoration: underline;
-        text-decoration-color: var(--third-color #99E2D0);
+        text-decoration-color:#99E2D0;
     }
 
     li{
@@ -40,11 +47,48 @@ main{
     background: var(--Background, #F6F6F6);
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     width: 349px;
-    height: 69px;
+    // height: 69px;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     margin-top: 12px;
     font-family: 'Roboto';
+    padding-left: 10px;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 15px;
+
+            h3{
+                margin: 0px;
+            }
+
+            h4{
+                margin-top: 5px;
+                margin-bottom: 0px;
+            }
+
+            p{
+                padding-right: 15px;
+                margin: 0px;
+            }
+
+        }
+
+        .coche{
+            // width: 59px;
+            // height: 100%;
+            background-color: var(--third-color);
+            // display: flex;
+            // justify-content: space-evenly;
+            justify-content: space-evenly;
+            display: flex;
+            width: 59px;
+            height: 69px;
+            align-items: center;
+        }
     }
 
     button {
@@ -52,9 +96,12 @@ main{
         border: none;
         width: 218px;
         height: 50px;
+        font-size: 16px;
         border-radius: 25px;
         text-align: center;
         margin-left: 85px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         background: var(--Button-Gradient, linear-gradient(#FF79DA, #9356DC));
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
         transition: opacity 2s, box-shadow 2s;

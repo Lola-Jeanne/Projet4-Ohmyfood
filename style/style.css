@@ -19,9 +19,20 @@ footer {
   width: 100%;
 }
 
-footer .texte {
+footer footer .texte {
   display: flex;
   justify-content: baseline;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+}
+
+footer li {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
 }
 
 header img {
@@ -45,6 +56,7 @@ header nav h3 {
 
 .section-boutton {
   background-color: var(--backgroung-gray);
+  padding-bottom: 50px;
 }
 
 .section-boutton h2 {
@@ -80,7 +92,7 @@ section button:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
-li {
+.liste-home {
   border-radius: 20px;
   background: var(--Background, #F6F6F6);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -93,7 +105,7 @@ li {
   align-items: center;
 }
 
-li::before {
+.liste-home::before {
   background-color: var(--main-color);
   border-radius: 50%;
   color: white;
@@ -133,7 +145,7 @@ li::before {
   opacity: 1;
 }
 
-li:hover .fa-solid {
+.liste-home:hover .fa-solid {
   color: var(--main-color);
 }
 

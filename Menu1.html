@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="styleMenu1" href="./style/styleMenu1.scss">
+    <link rel="stylesheet" href="./style/styleMenu1.css">
     <script src="https://kit.fontawesome.com/8ea1466eae.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -18,48 +18,93 @@
         <i class="fa-solid fa-arrow-left" style="color: #353535;"></i>
         <img src="./Images/ohmyfood@2x.svg" alt="Logo OhMyFood">
     </header>
-    <section>
-        <img src="./Images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image du du premier restaurant">
-    </section>
     <main>
-        <h1>La palette du goût</h1>
-        <h2>ENTRÉES</h2>
-        <ul>
-            <li>
-                <h3>Fricassé d'escargots</h3>
-                <h4>Au piment d'espelette</h4>
-            </li>
-            <li>
-                <h3>Foie gras de canard mi-cuit</h3>
-                <h4>Et ses copeaux de truffe noir</h4>
-            </li>
-            <li>
-                <h3>Œuf au plat</h3>
-                <h4>Assaisoné à la truffe sur lit de caviar</h4>
-            </li>
-        </ul>
-        <h2>PLATS</h2>
-        <ul>
-            <li>
-                <h3>Poulet rôti aux herbes de Provence</h3>
-                <h4>Et sa crème de truffe</h4>
-            </li>
-            <li>
-                <h3>Langouste rôtie</h3>
-                <h4>Et ses légumes de saison</h4>
-            </li>
-            <li>
-                <h3>Côte de bœuf Angus</h3>
-                <h4>Et sa purée de panais</h4>
-            </li>
-        </ul>
-        <button>Commander</button>
+        <img src="./Images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image du du premier restaurant">
+        <div class="menu">
+            <h1>La palette du goût</h1>
+            <h2>ENTRÉES</h2>
+            <ul>
+                <li>
+                    <div>
+                        <h3>Fricassé d'escargots</h3>
+                        <h4>Au piment d'Espelette</h4>
+                        <p>25 &euro;</p>
+                    </div>
+                    <div class="coche">
+                        <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Foie gras de canard mi-cuit</h3>
+                        <h4>Et ses copeaux de truffe noir</h4>
+                        <p>35 &euro;</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Œuf au plat</h3>
+                        <h4>Assaisoné à la truffe sur lit de caviar</h4>
+                        <p>20 &euro;</p>
+                    </div>
+                </li>
+            </ul>
+            <h2>PLATS</h2>
+            <ul>
+                <li>
+                    <div>
+                        <h3>Filet de bœuf aux herbes</h3>
+                        <h4>Accompagné de sa ribambelle de légumes</h4>
+                        <p>40 &euro;</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Parmantier de queue de bœuf</h3>
+                        <h4>À la truffe noire sur sa purée de panais</h4>
+                        <p>35 &euro;</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Filet de turbot</h3>
+                        <h4>Aux argumes</h4>
+                        <p>44 &euro;</p>
+                    </div>
+                </li>
+            </ul>
+            <h2>DESSERTS</h2>
+            <ul>
+                <li>
+                    <div>
+                        <h3>Paris-Brest</h3>
+                        <h4>Revisité</h4>
+                        <p>18 &euro;</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Macaron au chocolat d'exception</h3>
+                        <h4>Et glace à la vanille de Madagascar</h4>
+                        <p>22 &euro;</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Mousse au chocolat</h3>
+                        <h4>Au piment d'Espelette et à la truffe noire</h4>
+                        <p>23 &euro;</p>
+                    </div>
+                </li>
+            </ul>
+            <button>Commander</button>
+        </div>
     </main>
     <footer class="texte">
         <img src="./Images/ohmyfood-blanc.png" alt="Logo OhMyFood">
         <i class="fa-solid fa-utensils" style="color: #ffffff;"></i><h4>Proposez un restaurant</h4>
         <i class="fa-solid fa-handshake-angle" style="color: #ffffff;"></i><h4>Devenir partenaire</h4>
         <h5>Mentions légales</h5>
-        <h5>Contact</h5>
+        <a href="mailto:contact@ohmyfood.com">Contact</a>
     </footer>
 </body>

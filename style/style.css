@@ -156,6 +156,7 @@ section button:hover {
 .section-restaurant {
   background-color: var(--backgroung-gray);
   width: 100%;
+  padding-top: 54px;
 }
 
 /* .restaurant {
@@ -172,6 +173,14 @@ section button:hover {
 .section-restaurant {
   width: 100%;
   align-self: stretch;
+}
+
+.section-restaurant h2 {
+  padding-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Roboto';
+  font-weight: 700;
 }
 
 .section-restaurant .container-restaurant {
@@ -194,28 +203,22 @@ section button:hover {
   padding-bottom: 77px;
 }
 
-/* .restaurant-cards  */
-/* img {
-  width: 340px;
-  height: 174px;
-  align-self: stretch;
-  border-radius: 20px 20px 0px 0px;
-} */
-/* .restaurant-cards  */
-.card-content {
-  gap: 8px;
-  padding-left: 15px;
-  padding-bottom: 10px;
-}
-
-.card img {
+.section-restaurant .container-restaurant .card img {
   width: 100%;
   height: 231px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 
-.card-title {
+.section-restaurant .container-restaurant .card-content {
+  gap: 8px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  height: 77px;
+  width: 50%;
+}
+
+.section-restaurant .container-restaurant .card-title {
   color: #000;
   font-family: Roboto;
   font-size: 18px;
@@ -224,5 +227,8 @@ section button:hover {
   line-height: normal;
   width: 267px;
   height: 20px;
-  flex-shrink: 0;
+}
+
+.section-restaurant .container-restaurant .coeur {
+  display: flex;
 }

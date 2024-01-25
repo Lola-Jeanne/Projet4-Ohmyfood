@@ -35,6 +35,10 @@ footer li {
   gap: 9px;
 }
 
+header .fa-arrow-left {
+  font-size: 25px;
+}
+
 header img {
   display: flex;
   align-items: center;
@@ -42,10 +46,6 @@ header img {
   padding-bottom: 13px;
   padding-top: 14px;
   gap: 42px;
-}
-
-header img .fa-arrow-left {
-  font-size: 20px;
 }
 
 main img {
@@ -95,16 +95,23 @@ main li div {
 
 main li div h3 {
   margin: 0px;
+  width: 50%;
 }
 
 main li div h4 {
   margin-top: 5px;
   margin-bottom: 0px;
+  width: 50%;
 }
 
 main li div p {
   padding-right: 15px;
   margin: 0px;
+  width: 50%;
+}
+
+main li div {
+  display: flex;
 }
 
 main li .coche {

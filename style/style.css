@@ -48,6 +48,14 @@ header nav {
   justify-content: center;
   align-items: center;
   gap: 17px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+header nav input {
+  background: none;
+  clip-path: content-box;
+  text-align: justify;
+  font-size: larger;
 }
 
 header nav h3 {
@@ -65,6 +73,8 @@ header nav h3 {
   font-size: 28px;
   height: 68px;
   display: flex;
+  margin-top: 4px;
+  padding-top: 30px;
 }
 
 .section-boutton h3 {
@@ -105,6 +115,11 @@ section button:hover {
   align-items: center;
 }
 
+.liste-home .fa-solid {
+  color: #7E7E7E;
+  padding-right: 15px;
+}
+
 .liste-home::before {
   background-color: var(--main-color);
   border-radius: 50%;
@@ -116,10 +131,6 @@ section button:hover {
   place-items: center;
   position: relative;
   width: 2rem;
-}
-
-.fa-mobile-screen-button {
-  color: var(--dark-gray);
 }
 
 /* section article {
@@ -139,6 +150,8 @@ section button:hover {
   background-clip: text;
   -webkit-background-clip: text;
   transition: opacity 1s;
+  position: relative;
+  left: 30px;
 }
 
 .heart-full:hover {
@@ -150,7 +163,7 @@ section button:hover {
 }
 
 .fa-heart {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .section-restaurant {
@@ -189,6 +202,13 @@ section button:hover {
   flex-direction: column;
 }
 
+.section-restaurant .container-restaurant a {
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: #000;
+}
+
 .section-restaurant .container-restaurant .card {
   margin-top: 33px;
   width: 340px;
@@ -210,15 +230,32 @@ section button:hover {
   border-radius: 20px 20px 0px 0px;
 }
 
+.section-restaurant .container-restaurant .card .Nouveau {
+  background-color: #99E2D0;
+  color: #008766;
+  border-radius: 2px;
+  width: 80px;
+  position: relative;
+  left: 250px;
+  bottom: 215px;
+  display: flex;
+  justify-content: center;
+}
+
+.section-restaurant .container-restaurant .card .Nouveau p {
+  margin: 6px;
+  font-size: 14px;
+}
+
 .section-restaurant .container-restaurant .card-content {
   gap: 8px;
   padding-left: 15px;
   padding-bottom: 10px;
   height: 77px;
-  width: 50%;
+  width: 100%;
 }
 
-.section-restaurant .container-restaurant .card-title {
+.section-restaurant .container-restaurant .card-content .card-title {
   color: #000;
   font-family: Roboto;
   font-size: 18px;
@@ -229,6 +266,9 @@ section button:hover {
   height: 20px;
 }
 
-.section-restaurant .container-restaurant .coeur {
-  display: flex;
+.section-restaurant .container-restaurant .card-content .coeur {
+  position: relative;
+  width: 100%;
+  bottom: 60px;
+  left: 220px;
 }

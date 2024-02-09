@@ -12,6 +12,25 @@
   --backgroung-gray: #F6F6F6;
 }
 
+.fa-heart {
+  font-size: 30px;
+}
+
+.heart-full {
+  color: transparent;
+  opacity: 0;
+  background: var(--Button-Gradient, linear-gradient(#9356DC, #FF79DA));
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: opacity 1s;
+  position: relative;
+  left: 30px;
+}
+
+.heart-full:hover {
+  opacity: 1;
+}
+
 footer {
   background-color: var(--dark-gray);
   color: white;
@@ -73,6 +92,31 @@ main h1 {
   padding-bottom: 43px;
 }
 
+main .fa-heart {
+  font-size: 30px;
+}
+
+main .heart-full {
+  color: transparent;
+  opacity: 0;
+  background: var(--Button-Gradient, linear-gradient(#9356DC, #FF79DA));
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: opacity 1s;
+  position: relative;
+  left: 30px;
+}
+
+main .heart-full:hover {
+  opacity: 1;
+}
+
+main .coeur {
+  position: relative;
+  right: -340px;
+  bottom: 80px;
+}
+
 main h2 {
   font-family: Roboto;
   font-weight: 100;
@@ -89,8 +133,8 @@ main li {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   width: 349px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
   margin-top: 12px;
   font-family: 'Roboto';
   padding-left: 10px;
@@ -103,38 +147,54 @@ main li div {
   padding: 15px;
 }
 
-main li div h3 {
+main li .texte {
+  width: 100%;
+  max-width: 230px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+main li .texte h3 {
   margin: 0px;
 }
 
-main li div h4 {
+main li .texte h4 {
   margin-top: 5px;
   margin-bottom: 0px;
   width: 50%;
 }
 
-main li div p {
-  padding-right: 15px;
-  margin: 0px;
-  width: 50%;
+main li .prix {
+  padding: 0px;
+  position: relative;
+  top: 45px;
+  right: 15px;
+  font-weight: bolder;
 }
 
 main li .coche {
-  background-color: var(--third-color);
   justify-content: space-evenly;
   display: flex;
   width: 59px;
-  height: 69px;
   align-items: center;
-  position: relative;
-  left: 245px;
-  bottom: 80px;
   border-radius: 0px 20px 20px 0px;
-  scale: 1;
+  width: 0;
+  padding: 0px;
+  transition: width 1s;
 }
 
-main li .coche:hover {
-  scale: 5;
+main li:hover .coche {
+  background-color: var(--third-color);
+  width: 59px;
+}
+
+main li .fa-circle-check {
+  visibility: hidden;
+}
+
+main li:hover .fa-circle-check {
+  visibility: visible;
 }
 
 main button {

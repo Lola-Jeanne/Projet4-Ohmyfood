@@ -247,6 +247,16 @@ section button:hover {
   font-size: 14px;
 }
 
+.section-restaurant .container-restaurant .card-content-nv {
+  gap: 8px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  height: 77px;
+  width: 100%;
+  position: relative;
+  bottom: 35px;
+}
+
 .section-restaurant .container-restaurant .card-content {
   gap: 8px;
   padding-left: 15px;
@@ -264,6 +274,12 @@ section button:hover {
   line-height: normal;
   width: 267px;
   height: 20px;
+}
+
+.section-restaurant .container-restaurant .card-content .coeur-nv {
+  position: relative;
+  left: 220px;
+  bottom: 60px;
 }
 
 .section-restaurant .container-restaurant .card-content .coeur {

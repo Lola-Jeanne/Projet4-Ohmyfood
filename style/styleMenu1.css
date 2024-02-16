@@ -3,6 +3,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  margin: 0px;
+}
+
 :root {
   --main-color: #9356DC;
   --second-color: #FF79DA;
@@ -46,6 +50,7 @@ footer footer .texte {
 footer ul {
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
 footer li {
@@ -67,6 +72,10 @@ header img {
   position: relative;
   top: -45px;
   left: 100px;
+}
+
+main {
+  background-color: var(--backgroung-gray);
 }
 
 main img {
@@ -121,10 +130,97 @@ main h2 {
   font-family: Roboto;
   font-weight: 100;
   font-size: 16px;
-  text-decoration: underline;
-  text-decoration-color: #99E2D0;
   padding-bottom: 12px;
   padding-left: 10px;
+}
+
+main hr {
+  border-color: var(--third-color);
+  width: 10%;
+  position: relative;
+  right: 195px;
+  bottom: 20px;
+}
+
+main .entree1 {
+  animation: entrees 2s;
+  animation-duration: 2s;
+}
+
+main .entree2 {
+  animation: entrees 2s;
+  animation-duration: 2s;
+}
+
+main .entree3 {
+  animation: entrees 2s;
+  animation-duration: 2s;
+}
+
+main .plat1 {
+  animation: plats 2s;
+  animation-duration: 2s;
+}
+
+main .plat2 {
+  animation: plats 2s;
+  animation-duration: 2s;
+}
+
+main .plat3 {
+  animation: plats 2s;
+  animation-duration: 2s;
+}
+
+main .dessert1 {
+  animation: desserts 2s;
+  animation-duration: 2s;
+}
+
+main .dessert2 {
+  animation: desserts 2s;
+  animation-duration: 2s;
+}
+
+main .dessert3 {
+  animation: desserts 2s;
+  animation-duration: 2s;
+}
+
+@keyframes entrees {
+  0% {
+    transform: translateY(0) scaleX(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+
+@keyframes plats {
+  0% {
+    transform: translateY(0) scaleX(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+
+@keyframes desserts {
+  0% {
+    transform: translateY(0) scaleX(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
 }
 
 main li {
@@ -149,7 +245,7 @@ main li div {
 
 main li .texte {
   width: 100%;
-  max-width: 230px;
+  max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -157,12 +253,20 @@ main li .texte {
 
 main li .texte h3 {
   margin: 0px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 main li .texte h4 {
   margin-top: 5px;
   margin-bottom: 0px;
   width: 50%;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 main li .prix {

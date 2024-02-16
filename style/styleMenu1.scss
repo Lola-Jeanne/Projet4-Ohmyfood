@@ -20,8 +20,9 @@ header{
 }
 
 
+
 main{
-    // background-color: var(--backgroung-gray);
+    background-color: var(--backgroung-gray);
 
     img{
         width: 100%;
@@ -74,11 +75,106 @@ main{
         font-family: Roboto;
         font-weight: 100;
         font-size: 16px;
-        text-decoration: underline;
-        text-decoration-color:#99E2D0;
+        // text-decoration: underline;
+        // text-decoration-color:#99E2D0;
         padding-bottom: 12px;
         padding-left: 10px;
     }
+
+    hr{
+        border-color: var(--third-color);
+        width: 10%;
+        position: relative;
+        right: 195px;
+        bottom: 20px;
+    }
+
+    .entree1{
+        animation: entrees 2s;
+        animation-duration: 2s;
+    }
+
+    .entree2{
+        animation: entrees 2s;
+        animation-duration: 2s;
+    }
+
+    .entree3{
+        animation: entrees 2s;
+        animation-duration: 2s;
+    }
+
+    .plat1{
+        animation: plats 2s;
+        animation-duration: 2s;
+    }
+
+    .plat2{
+        animation: plats 2s;
+        animation-duration: 2s;
+    }
+
+    .plat3{
+        animation: plats 2s;
+        animation-duration: 2s;
+    }
+
+    .dessert1{
+        animation: desserts 2s;
+        animation-duration: 2s;
+    }
+
+    .dessert2{
+        animation: desserts 2s;
+        animation-duration: 2s;
+    }
+
+    .dessert3{
+        animation: desserts 2s;
+        animation-duration: 2s;
+    }
+
+    @keyframes entrees {
+        0%{
+            transform: translateY(0)
+                        scaleX(0);
+        }
+        50%{
+            transform: translateY(-30px);
+        }
+        100%{
+            transform: translateY(30px);
+        }
+    }
+
+    @keyframes plats {
+        0%{
+            transform: translateY(0)
+                        scaleX(0);
+        }
+        50%{
+            transform: translateY(-30px);
+        }
+        100%{
+            transform: translateY(30px);
+        }
+        
+    }
+
+    @keyframes desserts {
+        0%{
+            transform: translateY(0) 
+                        scaleX(0);
+        }
+        50%{
+            transform: translateY(-30px);
+        }
+        100%{
+            transform: translateY(30px);
+        }
+        
+    }
+    
 
     li{
         border-radius: 20px;
@@ -104,19 +200,27 @@ main{
 
         .texte{
             width: 100%;
-            max-width: 230px;
+            max-width: 100%;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
             
             h3{
                 margin: 0px;
+                max-width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
 
             h4{
                 margin-top: 5px;
                 margin-bottom: 0px;
                 width: 50%;
+                max-width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
         
 

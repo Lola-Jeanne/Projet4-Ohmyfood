@@ -144,47 +144,38 @@ main hr {
 
 main .entree1 {
   animation: entrees 2s;
-  animation-duration: 2s;
 }
 
 main .entree2 {
   animation: entrees 2s;
-  animation-duration: 2s;
 }
 
 main .entree3 {
   animation: entrees 2s;
-  animation-duration: 2s;
 }
 
 main .plat1 {
-  animation: plats 2s;
-  animation-duration: 2s;
+  animation: plats 3s;
 }
 
 main .plat2 {
-  animation: plats 2s;
-  animation-duration: 2s;
+  animation: plats 3s;
 }
 
 main .plat3 {
-  animation: plats 2s;
-  animation-duration: 2s;
+  animation: plats 3s;
 }
 
 main .dessert1 {
-  animation: desserts 2s;
-  animation-duration: 2s;
+  animation: desserts 4s;
 }
 
 main .dessert2 {
-  animation: desserts 2s;
-  animation-duration: 2s;
+  animation: desserts 4s;
 }
 
 main .dessert3 {
-  animation: desserts 2s;
-  animation-duration: 2s;
+  animation: desserts 4s;
 }
 
 @keyframes entrees {
@@ -200,7 +191,8 @@ main .dessert3 {
 }
 
 @keyframes plats {
-  0% {
+  0%
+, 20% {
     transform: translateY(0) scaleX(0);
   }
   50% {
@@ -212,7 +204,8 @@ main .dessert3 {
 }
 
 @keyframes desserts {
-  0% {
+  0%
+, 30% {
     transform: translateY(0) scaleX(0);
   }
   50% {

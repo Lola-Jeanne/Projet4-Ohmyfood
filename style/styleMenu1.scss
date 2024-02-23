@@ -1,4 +1,4 @@
-@import "Commun";
+@import "_Commun";
 
 header{
 
@@ -91,47 +91,47 @@ main{
 
     .entree1{
         animation: entrees 2s;
-        animation-duration: 2s;
+        // animation-duration: 2s;
     }
 
     .entree2{
         animation: entrees 2s;
-        animation-duration: 2s;
+        // animation-duration: 2s;
     }
 
     .entree3{
         animation: entrees 2s;
-        animation-duration: 2s;
+        // animation-duration: 2s;
     }
 
     .plat1{
-        animation: plats 2s;
-        animation-duration: 2s;
+        animation: plats 3s;
+        // animation-duration: 2s;
     }
 
     .plat2{
-        animation: plats 2s;
-        animation-duration: 2s;
+        animation: plats 3s;
+        // animation-duration: 2s;
     }
 
     .plat3{
-        animation: plats 2s;
-        animation-duration: 2s;
+        animation: plats 3s;
+        // animation-duration: 2s;
     }
 
     .dessert1{
-        animation: desserts 2s;
-        animation-duration: 2s;
+        animation: desserts 4s;
+        // animation-duration: 2s;
     }
 
     .dessert2{
-        animation: desserts 2s;
-        animation-duration: 2s;
+        animation: desserts 4s;
+        // animation-duration: 2s;
     }
 
     .dessert3{
-        animation: desserts 2s;
-        animation-duration: 2s;
+        animation: desserts 4s;
+        // animation-duration: 2s;
     }
 
     @keyframes entrees {
@@ -148,7 +148,8 @@ main{
     }
 
     @keyframes plats {
-        0%{
+        0% 
+        ,20%{
             transform: translateY(0)
                         scaleX(0);
         }
@@ -162,7 +163,8 @@ main{
     }
 
     @keyframes desserts {
-        0%{
+        0%
+        ,30%{
             transform: translateY(0) 
                         scaleX(0);
         }

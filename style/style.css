@@ -59,10 +59,23 @@ footer li {
   gap: 9px;
 }
 
+body {
+  transition: opacity visibility hidden;
+}
+
+body ::after {
+  opacity: 2s;
+  visibility: visible;
+}
+
 .fa-carrot {
   font-size: 70px;
   animation: bounce-out-down .2ms;
-  animation-duration: 3s;
+  animation-duration: 2s;
+  position: relative;
+  left: 180px;
+  top: 350px;
+  animation-fill-mode: backwards;
 }
 
 @keyframes bounce-out-down {
@@ -253,7 +266,7 @@ section button:hover {
   color: #000;
 }
 
-.section-restaurant .container-restaurant .card {
+.section-restaurant .container-restaurant article {
   margin-top: 33px;
   width: 340px;
   height: 251px;
@@ -268,14 +281,14 @@ section button:hover {
   position: relative;
 }
 
-.section-restaurant .container-restaurant .card img {
+.section-restaurant .container-restaurant article img {
   width: 100%;
   height: 231px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 
-.section-restaurant .container-restaurant .card .Nouveau {
+.section-restaurant .container-restaurant article .Nouveau {
   background-color: #99E2D0;
   color: #008766;
   border-radius: 2px;
@@ -285,21 +298,8 @@ section button:hover {
   top: 13px;
   display: flex;
   justify-content: center;
-}
-
-.section-restaurant .container-restaurant .card .Nouveau p {
-  margin: 6px;
+  padding: 4px;
   font-size: 14px;
-}
-
-.section-restaurant .container-restaurant .card-content-nv {
-  gap: 8px;
-  padding-left: 15px;
-  padding-bottom: 10px;
-  height: 77px;
-  width: 100%;
-  position: relative;
-  bottom: 35px;
 }
 
 .section-restaurant .container-restaurant .card-content {

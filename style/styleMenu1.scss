@@ -16,20 +16,29 @@ header{
         position: relative;
         top: -45px;
         left: 100px;
+        
+        @media (min-width: 1024px){
+            left: 450px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
     }
 }
 
 
-
 main{
-    background-color: var(--backgroung-gray);
-
+    // background-color: var(--backgroung-gray);
+    background-color: white;
     img{
         width: 100%;
         height: 275px;
         object-fit: cover;
         position: relative;
         top: -45px;
+
+        @media (min-width: 1024px){
+            width: 1440px;
+        }
     }
 
     .menu{
@@ -37,6 +46,11 @@ main{
         border-radius: 30px 30px 0px 0px;
         position: relative;
         top: -105px;
+
+        @media (min-width: 1024px){
+            width: 70%;
+            left: 150px;
+        }
     }
 
     h1{
@@ -45,6 +59,11 @@ main{
         padding-left: 20px;
         padding-top: 30px;
         padding-bottom: 43px;
+
+        @media (min-width: 1024px){
+            display: flex;
+            justify-content: center;
+        }
     }
 
     .fa-heart {
@@ -69,6 +88,10 @@ main{
         position: relative;
         right: -340px;
         bottom: 80px;
+
+        @media (min-width: 1024px){
+            right: -530px;
+        }
     }
 
     h2{
@@ -79,6 +102,11 @@ main{
         // text-decoration-color:#99E2D0;
         padding-bottom: 12px;
         padding-left: 10px;
+
+        @media (min-width: 1024px){
+            position: relative;
+            left: 40px;
+        }
     }
 
     hr{
@@ -87,6 +115,10 @@ main{
         position: relative;
         right: 195px;
         bottom: 20px;
+
+        @media (min-width: 1024px){
+            right: 285px;
+        }
     }
 
     .entree1{
@@ -192,6 +224,10 @@ main{
         font-family: 'Roboto';
         padding-left: 10px;
 
+        @media (min-width: 1024px){
+          width: 634px;  
+        }
+
 
         div{
             display: flex;
@@ -290,7 +326,18 @@ main{
           opacity: 0.6;
           box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
         }
+
+        @media (min-width: 1024px){
+            position: relative;
+            left: 150px;
+        }
       
       
     }
 }
+
+
+
+@media (min-width: 1024px){
+            
+        }

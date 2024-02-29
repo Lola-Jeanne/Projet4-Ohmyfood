@@ -50,6 +50,11 @@
       display: flex;
       flex-direction: column;
       padding: 0;
+// media queries bigger than 1024px
+      @media (min-width: 1024px){
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+      }
     }
 
     li {

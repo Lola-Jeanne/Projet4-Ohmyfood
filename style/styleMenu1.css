@@ -53,6 +53,13 @@ footer ul {
   padding: 0;
 }
 
+@media (min-width: 1024px) {
+  footer ul {
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+  }
+}
+
 footer li {
   display: flex;
   align-items: baseline;
@@ -74,8 +81,16 @@ header img {
   left: 100px;
 }
 
+@media (min-width: 1024px) {
+  header img {
+    left: 450px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
 main {
-  background-color: var(--backgroung-gray);
+  background-color: white;
 }
 
 main img {
@@ -86,11 +101,24 @@ main img {
   top: -45px;
 }
 
+@media (min-width: 1024px) {
+  main img {
+    width: 1440px;
+  }
+}
+
 main .menu {
   background-color: var(--backgroung-gray);
   border-radius: 30px 30px 0px 0px;
   position: relative;
   top: -105px;
+}
+
+@media (min-width: 1024px) {
+  main .menu {
+    width: 70%;
+    left: 150px;
+  }
 }
 
 main h1 {
@@ -99,6 +127,13 @@ main h1 {
   padding-left: 20px;
   padding-top: 30px;
   padding-bottom: 43px;
+}
+
+@media (min-width: 1024px) {
+  main h1 {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 main .fa-heart {
@@ -126,6 +161,12 @@ main .coeur {
   bottom: 80px;
 }
 
+@media (min-width: 1024px) {
+  main .coeur {
+    right: -530px;
+  }
+}
+
 main h2 {
   font-family: Roboto;
   font-weight: 100;
@@ -134,12 +175,25 @@ main h2 {
   padding-left: 10px;
 }
 
+@media (min-width: 1024px) {
+  main h2 {
+    position: relative;
+    left: 40px;
+  }
+}
+
 main hr {
   border-color: var(--third-color);
   width: 10%;
   position: relative;
   right: 195px;
   bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+  main hr {
+    right: 285px;
+  }
 }
 
 main .entree1 {
@@ -229,6 +283,12 @@ main li {
   padding-left: 10px;
 }
 
+@media (min-width: 1024px) {
+  main li {
+    width: 634px;
+  }
+}
+
 main li div {
   display: flex;
   flex-direction: column;
@@ -313,4 +373,11 @@ main button {
 main button:hover {
   opacity: 0.6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+@media (min-width: 1024px) {
+  main button {
+    position: relative;
+    left: 150px;
+  }
 }

@@ -3,10 +3,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body {
-  margin: 0px;
-}
-
 :root {
   --main-color: #9356DC;
   --second-color: #FF79DA;
@@ -14,6 +10,15 @@ body {
   --dark-gray: #353535;
   --light-gray: #EAEAEA;
   --backgroung-gray: #F6F6F6;
+}
+
+body {
+  margin: 0px;
+}
+
+.home-logo {
+  display: flex;
+  justify-content: center;
 }
 
 .fa-heart {
@@ -40,9 +45,10 @@ footer {
   color: white;
   padding: 22px 25px 22px 25px;
   width: 100%;
+  display: flex;
 }
 
-footer footer .texte {
+footer .texte {
   display: flex;
   justify-content: baseline;
 }
@@ -66,13 +72,14 @@ footer li {
   gap: 9px;
 }
 
-body {
-  transition: opacity visibility hidden;
-}
-
-body ::after {
-  opacity: 2s;
-  visibility: visible;
+@keyframes loader {
+  0% {
+    opacity: 0;
+    display: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .fa-carrot {
@@ -82,7 +89,7 @@ body ::after {
   position: relative;
   left: 180px;
   top: 350px;
-  animation-fill-mode: backwards;
+  animation-fill-mode: forwards;
 }
 
 @keyframes bounce-out-down {
@@ -100,14 +107,7 @@ body ::after {
 }
 
 header img {
-  padding: 14px 89px 13px 89px;
-}
-
-@media (min-width: 1024px) {
-  header img {
-    position: relative;
-    left: 300px;
-  }
+  padding: 14px 0px 13px 0px;
 }
 
 header nav {
@@ -154,6 +154,11 @@ header nav h3 {
   font-weight: 300;
 }
 
+.explorer {
+  display: flex;
+  justify-content: center;
+}
+
 section button {
   color: white;
   border: none;
@@ -161,7 +166,6 @@ section button {
   height: 50px;
   border-radius: 25px;
   text-align: center;
-  margin-left: 85px;
   background: var(--Button-Gradient, linear-gradient(#FF79DA, #9356DC));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   transition: opacity 2s, box-shadow 2s;
@@ -172,15 +176,19 @@ section button:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
-@media (min-width: 1024px) {
-  section button {
-    margin-left: 400px;
-  }
+section {
+  padding-left: 20px;
+  animation: loader 5s;
+}
+
+section ::after {
+  opacity: 2s;
+  animation-fill-mode: forwards;
 }
 
 @media (min-width: 1024px) {
   section {
-    padding: 50px 180px 50px 180px;
+    width: 100%;
   }
 }
 
@@ -188,6 +196,9 @@ section button:hover {
   section ol {
     display: flex;
     flex-direction: row;
+    padding-bottom: 50px;
+    gap: 30px;
+    width: 100%;
   }
 }
 
@@ -265,7 +276,6 @@ section button:hover {
   .section-restaurant {
     display: flex;
     flex-direction: column;
-    padding: 54px 180px;
   }
 }
 
@@ -297,6 +307,16 @@ section button:hover {
   display: flex;
   align-self: stretch;
   flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .section-restaurant .container-restaurant .restaurant-cards {
+    display: flex;
+    width: 100%;
+    gap: 100px;
+    place-content: center;
+  }
 }
 
 .section-restaurant .container-restaurant a {

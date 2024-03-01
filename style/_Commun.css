@@ -3,10 +3,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body {
-  margin: 0px;
-}
-
 :root {
   --main-color: #9356DC;
   --second-color: #FF79DA;
@@ -14,6 +10,15 @@ body {
   --dark-gray: #353535;
   --light-gray: #EAEAEA;
   --backgroung-gray: #F6F6F6;
+}
+
+body {
+  margin: 0px;
+}
+
+.home-logo {
+  display: flex;
+  justify-content: center;
 }
 
 .fa-heart {
@@ -40,9 +45,10 @@ footer {
   color: white;
   padding: 22px 25px 22px 25px;
   width: 100%;
+  display: flex;
 }
 
-footer footer .texte {
+footer .texte {
   display: flex;
   justify-content: baseline;
 }

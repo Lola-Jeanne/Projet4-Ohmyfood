@@ -4,6 +4,7 @@ header{
 
     .fa-arrow-left{
         font-size: 25px;
+        padding-left: 17px;
     }
 
     img{
@@ -18,7 +19,7 @@ header{
         left: 100px;
         
         @media (min-width: 1024px){
-            left: 450px;
+            // left: 450px;
             padding-top: 30px;
             padding-bottom: 30px;
         }
@@ -53,6 +54,12 @@ main{
         }
     }
 
+    .menu-coeur{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+
     h1{
         font-family: shrikhand;
         margin: 0px;
@@ -60,10 +67,10 @@ main{
         padding-top: 30px;
         padding-bottom: 43px;
 
-        @media (min-width: 1024px){
-            display: flex;
-            justify-content: center;
-        }
+        // @media (min-width: 1024px){
+        //     display: flex;
+        //     justify-content: center;
+        // }
     }
 
     .fa-heart {
@@ -84,15 +91,15 @@ main{
         }
     }
 
-    .coeur{
-        position: relative;
-        right: -340px;
-        bottom: 80px;
+    // .coeur{
+    //     position: relative;
+    //     right: -340px;
+    //     bottom: 80px;
 
-        @media (min-width: 1024px){
-            right: -530px;
-        }
-    }
+    //     @media (min-width: 1024px){
+    //         right: -530px;
+    //     }
+    // }
 
     h2{
         font-family: Roboto;
@@ -100,8 +107,13 @@ main{
         font-size: 16px;
         // text-decoration: underline;
         // text-decoration-color:#99E2D0;
-        padding-bottom: 12px;
-        padding-left: 10px;
+        // padding-bottom: 12px;
+        // padding-left: 10px;
+        margin-left: 10px;
+        border-bottom: 2px solid;
+        border-color: var(--third-color);
+        border-width: 3px;
+        width: 40px;
 
         @media (min-width: 1024px){
             position: relative;

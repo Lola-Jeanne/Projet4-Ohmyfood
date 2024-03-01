@@ -3,10 +3,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body {
-  margin: 0px;
-}
-
 :root {
   --main-color: #9356DC;
   --second-color: #FF79DA;
@@ -14,6 +10,15 @@ body {
   --dark-gray: #353535;
   --light-gray: #EAEAEA;
   --backgroung-gray: #F6F6F6;
+}
+
+body {
+  margin: 0px;
+}
+
+.home-logo {
+  display: flex;
+  justify-content: center;
 }
 
 .fa-heart {
@@ -40,9 +45,10 @@ footer {
   color: white;
   padding: 22px 25px 22px 25px;
   width: 100%;
+  display: flex;
 }
 
-footer footer .texte {
+footer .texte {
   display: flex;
   justify-content: baseline;
 }
@@ -68,6 +74,7 @@ footer li {
 
 header .fa-arrow-left {
   font-size: 25px;
+  padding-left: 17px;
 }
 
 header img {
@@ -83,7 +90,6 @@ header img {
 
 @media (min-width: 1024px) {
   header img {
-    left: 450px;
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -121,19 +127,18 @@ main .menu {
   }
 }
 
+main .menu-coeur {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
 main h1 {
   font-family: shrikhand;
   margin: 0px;
   padding-left: 20px;
   padding-top: 30px;
   padding-bottom: 43px;
-}
-
-@media (min-width: 1024px) {
-  main h1 {
-    display: flex;
-    justify-content: center;
-  }
 }
 
 main .fa-heart {
@@ -155,24 +160,15 @@ main .heart-full:hover {
   opacity: 1;
 }
 
-main .coeur {
-  position: relative;
-  right: -340px;
-  bottom: 80px;
-}
-
-@media (min-width: 1024px) {
-  main .coeur {
-    right: -530px;
-  }
-}
-
 main h2 {
   font-family: Roboto;
   font-weight: 100;
   font-size: 16px;
-  padding-bottom: 12px;
-  padding-left: 10px;
+  margin-left: 10px;
+  border-bottom: 2px solid;
+  border-color: var(--third-color);
+  border-width: 3px;
+  width: 40px;
 }
 
 @media (min-width: 1024px) {

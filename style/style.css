@@ -45,7 +45,30 @@ footer {
   color: white;
   padding: 22px 25px 22px 25px;
   width: 100%;
-  display: flex;
+}
+
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 769px) {
+  footer {
+    display: flex;
+    align-items: center;
+  }
+}
+
+footer img {
+  height: fit-content;
+}
+
+@media (min-width: 1024px) {
+  footer img {
+    place-self: center;
+  }
 }
 
 footer .texte {
@@ -62,7 +85,13 @@ footer ul {
 @media (min-width: 1024px) {
   footer ul {
     flex-direction: row;
-    flex-wrap: wrap-reverse;
+    align-items: center;
+  }
+}
+
+@media (min-width: 769px) {
+  footer ul {
+    align-items: center;
   }
 }
 
@@ -70,6 +99,13 @@ footer li {
   display: flex;
   align-items: baseline;
   gap: 9px;
+}
+
+@media (min-width: 1024px) {
+  footer li {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
 }
 
 @keyframes loader {
@@ -106,6 +142,10 @@ footer li {
   }
 }
 
+header {
+  animation: loader 5s;
+}
+
 header img {
   padding: 14px 0px 13px 0px;
 }
@@ -136,6 +176,13 @@ header nav h3 {
 .section-boutton {
   background-color: var(--backgroung-gray);
   padding-bottom: 50px;
+}
+
+@media (min-width: 769px) {
+  .section-boutton {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .section-boutton h2 {
@@ -192,6 +239,12 @@ section ::after {
   }
 }
 
+@media (min-width: 769px) {
+  section {
+    display: flex;
+  }
+}
+
 @media (min-width: 1024px) {
   section ol {
     display: flex;
@@ -242,6 +295,7 @@ section ::after {
   height: 72.379px;
   padding-left: 35px;
   margin-bottom: 30px;
+
 } */
 .heart-full {
   color: transparent;
@@ -392,4 +446,8 @@ section ::after {
   width: 100%;
   bottom: 60px;
   left: 220px;
+}
+
+footer {
+  animation: loader 5s;
 }

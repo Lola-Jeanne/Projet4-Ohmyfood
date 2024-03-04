@@ -45,7 +45,30 @@ footer {
   color: white;
   padding: 22px 25px 22px 25px;
   width: 100%;
-  display: flex;
+}
+
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 769px) {
+  footer {
+    display: flex;
+    align-items: center;
+  }
+}
+
+footer img {
+  height: fit-content;
+}
+
+@media (min-width: 1024px) {
+  footer img {
+    place-self: center;
+  }
 }
 
 footer .texte {
@@ -62,7 +85,13 @@ footer ul {
 @media (min-width: 1024px) {
   footer ul {
     flex-direction: row;
-    flex-wrap: wrap-reverse;
+    align-items: center;
+  }
+}
+
+@media (min-width: 769px) {
+  footer ul {
+    align-items: center;
   }
 }
 
@@ -70,4 +99,11 @@ footer li {
   display: flex;
   align-items: baseline;
   gap: 9px;
+}
+
+@media (min-width: 1024px) {
+  footer li {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
 }

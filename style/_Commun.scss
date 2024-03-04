@@ -45,8 +45,25 @@
     color: white;
     padding: 22px 25px 22px 25px;
     width: 100%;
-    display: flex;
-    // justify-content: baseline;
+
+    @media (min-width: 1024px){
+      display: flex;
+      flex-direction: row-reverse;     
+    }
+
+    @media (min-width: 769px){
+      display: flex;
+      align-items: center;
+    }
+    
+
+    img{
+      height: fit-content;
+    
+      @media (min-width: 1024px){
+        place-self: center;
+      }
+    }
 
    .texte {
       display: flex;
@@ -60,7 +77,11 @@
 
       @media (min-width: 1024px){
         flex-direction: row;
-        flex-wrap: wrap-reverse;
+        align-items: center;
+      }
+
+      @media (min-width: 769px){
+        align-items: center;
       }
     }
 
@@ -68,5 +89,10 @@
       display: flex;
       align-items: baseline;
       gap: 9px;
+
+      @media (min-width: 1024px){
+        padding-left: 7px;
+        padding-right: 7px;
+      }
     }
   }

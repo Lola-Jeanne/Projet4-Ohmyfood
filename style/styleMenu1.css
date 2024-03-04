@@ -45,7 +45,30 @@ footer {
   color: white;
   padding: 22px 25px 22px 25px;
   width: 100%;
-  display: flex;
+}
+
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 769px) {
+  footer {
+    display: flex;
+    align-items: center;
+  }
+}
+
+footer img {
+  height: fit-content;
+}
+
+@media (min-width: 1024px) {
+  footer img {
+    place-self: center;
+  }
 }
 
 footer .texte {
@@ -62,7 +85,13 @@ footer ul {
 @media (min-width: 1024px) {
   footer ul {
     flex-direction: row;
-    flex-wrap: wrap-reverse;
+    align-items: center;
+  }
+}
+
+@media (min-width: 769px) {
+  footer ul {
+    align-items: center;
   }
 }
 
@@ -70,6 +99,13 @@ footer li {
   display: flex;
   align-items: baseline;
   gap: 9px;
+}
+
+@media (min-width: 1024px) {
+  footer li {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
 }
 
 header .fa-arrow-left {
@@ -124,6 +160,14 @@ main .menu {
   main .menu {
     width: 70%;
     left: 150px;
+  }
+}
+
+@media (min-width: 769px) {
+  main .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -266,7 +310,15 @@ main .dessert3 {
   }
 }
 
-main li {
+@media (min-width: 769px) {
+  main ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+main ul li {
   border-radius: 20px;
   background: var(--Background, #F6F6F6);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -280,19 +332,19 @@ main li {
 }
 
 @media (min-width: 1024px) {
-  main li {
+  main ul li {
     width: 634px;
   }
 }
 
-main li div {
+main ul li div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 15px;
 }
 
-main li .texte {
+main ul li .texte {
   width: 100%;
   max-width: 100%;
   overflow: hidden;
@@ -300,7 +352,7 @@ main li .texte {
   white-space: nowrap;
 }
 
-main li .texte h3 {
+main ul li .texte h3 {
   margin: 0px;
   max-width: 100%;
   overflow: hidden;
@@ -308,7 +360,7 @@ main li .texte h3 {
   white-space: nowrap;
 }
 
-main li .texte h4 {
+main ul li .texte h4 {
   margin-top: 5px;
   margin-bottom: 0px;
   width: 50%;
@@ -318,7 +370,7 @@ main li .texte h4 {
   white-space: nowrap;
 }
 
-main li .prix {
+main ul li .prix {
   padding: 0px;
   position: relative;
   top: 45px;
@@ -326,7 +378,7 @@ main li .prix {
   font-weight: bolder;
 }
 
-main li .coche {
+main ul li .coche {
   justify-content: space-evenly;
   display: flex;
   width: 59px;
@@ -337,16 +389,16 @@ main li .coche {
   transition: width 1s;
 }
 
-main li:hover .coche {
+main ul li:hover .coche {
   background-color: var(--third-color);
   width: 59px;
 }
 
-main li .fa-circle-check {
+main ul li .fa-circle-check {
   visibility: hidden;
 }
 
-main li:hover .fa-circle-check {
+main ul li:hover .fa-circle-check {
   visibility: visible;
 }
 

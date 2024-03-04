@@ -52,6 +52,12 @@ main{
             width: 70%;
             left: 150px;
         }
+        @media (min-width: 769px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
     }
 
     .menu-coeur{
@@ -221,8 +227,14 @@ main{
         
     }
     
-
-    li{
+    ul{
+    @media (min-width: 769px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        } 
+        
+        li{
         border-radius: 20px;
         background: var(--Background, #F6F6F6);
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -235,12 +247,11 @@ main{
         margin-top: 12px;
         font-family: 'Roboto';
         padding-left: 10px;
-
+        
         @media (min-width: 1024px){
           width: 634px;  
         }
-
-
+        
         div{
             display: flex;
             flex-direction: column;
@@ -318,7 +329,8 @@ main{
         &:hover .fa-circle-check{
             visibility: visible;
         }
-    }
+   }
+}
 
     button {
         color: white;
@@ -353,3 +365,7 @@ main{
 @media (min-width: 1024px){
             
         }
+
+@media (min-width: 769px){
+
+}

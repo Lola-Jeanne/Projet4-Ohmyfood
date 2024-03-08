@@ -1,38 +1,33 @@
 @import "_Commun";
 
-// section{
-//   animation: loader 5s;
-// //  transition: opacity visibility hidden;
-//  ::after{
-//   opacity: 2s;
-//   // visibility: visible;
-//   animation-fill-mode: forwards;
-//  }
-// }
-
 
 @keyframes loader{
   0% {opacity:0;
       display: 0;}
-  100%{ opacity: 1;}
-      // display: 1;}
+  
+  25% {opacity: 0;
+      display: 0;}
+  
+  100% { opacity: 1;}
 }
 
-// @keyframes loader{
-//   visibility: hidden;
-//   visibility: visible;
-
-// }
 
 .fa-carrot {
-  font-size: 70px;
+  font-size: 100px;
   animation: bounce-out-down .2ms;
   animation-duration: 2s;
   position: relative;
-  left: 180px;
-  top: 350px;
-  // animation-fill-mode: backwards;
+  left: 200px;
+  top: 600px;
   animation-fill-mode: forwards;
+
+  @media (min-width: 769px){
+    left: 450px;
+  }
+
+  @media (min-width: 1024px){
+    left: 500px;
+  }
 }
 
 @keyframes bounce-out-down {
@@ -49,18 +44,10 @@
 
 header{
   animation: loader 5s;
-  // .home-logo{
-  //   display: flex;
-  //   justify-content: center;
-  // }
+
 
   img {
   padding: 14px 0px 13px 0px;
-
-  // @media (min-width: 1024px){
-  //   position: relative;
-  //   left: 300px;
-  //   }
   }
 } 
 
@@ -88,6 +75,7 @@ header nav {
 }
 
 .section-boutton {
+  animation: loader 5s;
   background-color: var(--backgroung-gray);
   padding-bottom: 50px;
 
@@ -101,7 +89,6 @@ header nav {
     font-weight: 700;
     font-size: 28px;
     height: 68px;
-    // display: flex;
     margin-top: 4px;
     padding-top: 30px;
   }
@@ -117,21 +104,17 @@ header nav {
 .explorer{
   display: flex;
   justify-content: center; 
-  // @media (min-width: 1024px){
-  //    display: flex;
-  //    justify-content: center;   
-  // }
 }
 
   
   section button {
+  animation: loader 5s;
   color: white;
   border: none;
   width: 218px;
   height: 50px;
   border-radius: 25px;
   text-align: center;
-  // margin-left: 85px;
   background: var(--Button-Gradient, linear-gradient(#FF79DA, #9356DC));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   transition: opacity 2s, box-shadow 2s;
@@ -139,29 +122,22 @@ header nav {
     opacity: 0.6;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
   }
+}
 
-  // @media (min-width: 1024px){
-  //    margin-left: 400px;       
-  // }
-  }
-
-section{
+.fonctionnement {
   padding-left: 20px;
-  // opacity: 0;
   animation: loader 5s;
-  //  transition: opacity visibility hidden;
    ::after{
     opacity: 2s;
-    // visibility: visible;
-    animation-fill-mode: forwards;} 
+    animation-fill-mode: forwards;}
+    
+  @media (min-width: 769px){
+      text-align: -webkit-center;
+    }
   
   @media (min-width: 1024px){
-      // padding: 50px 180px 50px 180px;
-      width: 100%;     
-  }
-
-  @media (min-width: 769px){
-    display: flex;
+      width: 100%;
+      text-align: left;     
   }
   
   ol{
@@ -206,25 +182,6 @@ section{
   width: 2rem;
 }
 
-// .fa-mobile-screen-button{
-//   color: var(--dark-gray);
-//   // padding-left: 15px;
-// }
-
-
-
-/* section article {
-  border-radius: 20px;
-  background: var(--Background, #F6F6F6);
-  display: flex;
-  align-items: center;
-  width: 322.486px;
-  height: 72.379px;
-  padding-left: 35px;
-  margin-bottom: 30px;
-
-} */
-
 .heart-full {
   color: transparent;
   opacity: 0;
@@ -250,32 +207,19 @@ section{
 }
 
 .section-restaurant {
+  animation: loader 5s;
   background-color: var(--backgroung-gray);
   width: 100%;
   padding-top: 54px;
 
   @media (min-width: 1024px){
     display: flex;
-    flex-direction: column;
-    // padding: 54px 180px;          
+    flex-direction: column;         
   }
 }
 
 
-// /* .card {
-//   background-color: white;
-//   border-radius: 15px;
-//   height: 251px;
-
-// } */
-
-/* .restaurant {
-  display: flex;
-  justify-content: space-between;
-} */
-
 .restaurant section {
-  /* background-color: var(--main-bg-color); */
   border-radius: 20px;
   padding: 30px;
   box-sizing: border-box;
@@ -291,6 +235,14 @@ section{
     margin-bottom: 0px;
     font-family: 'Roboto';
     font-weight: 700;
+
+    @media (min-width: 769px){
+      text-align: center;
+    }
+
+    @media (min-width: 1024px){
+      text-align: left;
+    }
   }
 
   .container-restaurant {
@@ -300,6 +252,11 @@ section{
     width: 100%;
 
     .restaurant-cards{
+
+      @media (min-width: 769px){
+        align-self: center;
+      }
+
       @media (min-width: 1024px){
         display: flex;
         width: 100%;
@@ -328,6 +285,11 @@ section{
       margin-bottom: 30px;
       padding-bottom: 77px;
       position: relative;
+
+      @media (min-width: 1024px){
+        width: 490px;
+        height: 251px;
+      }
     
         img {
         width: 100%;
@@ -341,33 +303,20 @@ section{
         color: #008766;
         border-radius: 2px;
         width: 80px;
-        // position: relative;
         position: absolute;
         left: 248px;
         top: 13px;
-        // bottom: 215px;
         display: flex;
         justify-content: center;
         padding: 4px;
         font-size: 14px;
 
-        // p{
-        //   margin: 6px;
-        //   font-size: 14px;
-        // }
+        @media (min-width: 1024px){
+          left: 357.41px;
+        }
       }
-
     }
 
-    // .card-content-nv{
-    //   gap: 8px;
-    //   padding-left: 15px;
-    //   padding-bottom: 10px;
-    //   height: 77px;
-    //   width: 100%;
-    //   position: relative;
-    //   bottom: 35px;
-    // }
     
     .card-content {
         gap: 8px;
@@ -391,6 +340,10 @@ section{
         position: relative;
         left: 220px;
         bottom: 60px;
+
+        @media (min-width: 1024px){
+          left: 385px;
+        }
       }
 
       .coeur{
@@ -398,6 +351,10 @@ section{
         width: 100%;
         bottom: 60px;
         left: 220px;
+
+        @media (min-width: 1024px){
+          left: 385px;
+        }
       }
     }
   }
@@ -405,14 +362,4 @@ section{
 
 footer{
   animation: loader 5s;
-}
-
-
-@media (min-width: 1024px){
-            
-}
-
-
-@media (min-width: 769px){
-    
 }

@@ -46,20 +46,22 @@
     padding: 22px 25px 22px 25px;
     width: 100%;
 
-    @media (min-width: 1024px){
-      display: flex;
-      flex-direction: row-reverse;     
-    }
-
     @media (min-width: 769px){
       display: flex;
       align-items: center;
+      justify-content: center;
+    }
+
+    @media (min-width: 1024px){
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: right;     
     }
     
 
     img{
       height: fit-content;
-    
+
       @media (min-width: 1024px){
         place-self: center;
       }

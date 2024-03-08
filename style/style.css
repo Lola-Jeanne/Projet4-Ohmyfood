@@ -47,17 +47,19 @@ footer {
   width: 100%;
 }
 
-@media (min-width: 1024px) {
-  footer {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-}
-
 @media (min-width: 769px) {
   footer {
     display: flex;
     align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
   }
 }
 
@@ -113,19 +115,35 @@ footer li {
     opacity: 0;
     display: 0;
   }
+  25% {
+    opacity: 0;
+    display: 0;
+  }
   100% {
     opacity: 1;
   }
 }
 
 .fa-carrot {
-  font-size: 70px;
+  font-size: 100px;
   animation: bounce-out-down .2ms;
   animation-duration: 2s;
   position: relative;
-  left: 180px;
-  top: 350px;
+  left: 200px;
+  top: 600px;
   animation-fill-mode: forwards;
+}
+
+@media (min-width: 769px) {
+  .fa-carrot {
+    left: 450px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fa-carrot {
+    left: 500px;
+  }
 }
 
 @keyframes bounce-out-down {
@@ -174,6 +192,7 @@ header nav h3 {
 }
 
 .section-boutton {
+  animation: loader 5s;
   background-color: var(--backgroung-gray);
   padding-bottom: 50px;
 }
@@ -207,6 +226,7 @@ header nav h3 {
 }
 
 section button {
+  animation: loader 5s;
   color: white;
   border: none;
   width: 218px;
@@ -223,30 +243,31 @@ section button:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
-section {
+.fonctionnement {
   padding-left: 20px;
   animation: loader 5s;
 }
 
-section ::after {
+.fonctionnement ::after {
   opacity: 2s;
   animation-fill-mode: forwards;
 }
 
-@media (min-width: 1024px) {
-  section {
-    width: 100%;
-  }
-}
-
 @media (min-width: 769px) {
-  section {
-    display: flex;
+  .fonctionnement {
+    text-align: -webkit-center;
   }
 }
 
 @media (min-width: 1024px) {
-  section ol {
+  .fonctionnement {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fonctionnement ol {
     display: flex;
     flex-direction: row;
     padding-bottom: 50px;
@@ -286,17 +307,6 @@ section ::after {
   width: 2rem;
 }
 
-/* section article {
-  border-radius: 20px;
-  background: var(--Background, #F6F6F6);
-  display: flex;
-  align-items: center;
-  width: 322.486px;
-  height: 72.379px;
-  padding-left: 35px;
-  margin-bottom: 30px;
-
-} */
 .heart-full {
   color: transparent;
   opacity: 0;
@@ -321,6 +331,7 @@ section ::after {
 }
 
 .section-restaurant {
+  animation: loader 5s;
   background-color: var(--backgroung-gray);
   width: 100%;
   padding-top: 54px;
@@ -333,12 +344,7 @@ section ::after {
   }
 }
 
-/* .restaurant {
-  display: flex;
-  justify-content: space-between;
-} */
 .restaurant section {
-  /* background-color: var(--main-bg-color); */
   border-radius: 20px;
   padding: 30px;
   box-sizing: border-box;
@@ -357,11 +363,29 @@ section ::after {
   font-weight: 700;
 }
 
+@media (min-width: 769px) {
+  .section-restaurant h2 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-restaurant h2 {
+    text-align: left;
+  }
+}
+
 .section-restaurant .container-restaurant {
   display: flex;
   align-self: stretch;
   flex-direction: column;
   width: 100%;
+}
+
+@media (min-width: 769px) {
+  .section-restaurant .container-restaurant .restaurant-cards {
+    align-self: center;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -395,6 +419,13 @@ section ::after {
   position: relative;
 }
 
+@media (min-width: 1024px) {
+  .section-restaurant .container-restaurant article {
+    width: 490px;
+    height: 251px;
+  }
+}
+
 .section-restaurant .container-restaurant article img {
   width: 100%;
   height: 231px;
@@ -414,6 +445,12 @@ section ::after {
   justify-content: center;
   padding: 4px;
   font-size: 14px;
+}
+
+@media (min-width: 1024px) {
+  .section-restaurant .container-restaurant article .Nouveau {
+    left: 357.41px;
+  }
 }
 
 .section-restaurant .container-restaurant .card-content {
@@ -441,11 +478,23 @@ section ::after {
   bottom: 60px;
 }
 
+@media (min-width: 1024px) {
+  .section-restaurant .container-restaurant .card-content .coeur-nv {
+    left: 385px;
+  }
+}
+
 .section-restaurant .container-restaurant .card-content .coeur {
   position: relative;
   width: 100%;
   bottom: 60px;
   left: 220px;
+}
+
+@media (min-width: 1024px) {
+  .section-restaurant .container-restaurant .card-content .coeur {
+    left: 385px;
+  }
 }
 
 footer {

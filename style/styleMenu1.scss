@@ -10,7 +10,6 @@ header{
     img{
         display: flex;
         align-items: center;
-        // padding-left: 89px;
         padding-right: 89px;
         padding-bottom: 13px;
         padding-top: 20px;
@@ -19,7 +18,6 @@ header{
         left: 100px;
         
         @media (min-width: 1024px){
-            // left: 450px;
             padding-top: 30px;
             padding-bottom: 30px;
         }
@@ -28,7 +26,6 @@ header{
 
 
 main{
-    // background-color: var(--backgroung-gray);
     background-color: white;
     img{
         width: 100%;
@@ -48,15 +45,17 @@ main{
         position: relative;
         top: -105px;
 
-        @media (min-width: 1024px){
-            width: 70%;
-            left: 150px;
-        }
-        @media (min-width: 769px){
+        @media (min-width: 768px){
             display: flex;
             flex-direction: column;
             align-items: center;
 
+        }
+        
+        @media (min-width: 1024px){
+            width: 70%;
+            left: 150px;
+            align-items: flex-start;
         }
     }
 
@@ -64,6 +63,10 @@ main{
         display: flex;
         justify-content: center;
         align-items: baseline;
+
+        @media (min-width: 1024px){
+           align-self: center;
+        }
     }
 
     h1{
@@ -72,11 +75,6 @@ main{
         padding-left: 20px;
         padding-top: 30px;
         padding-bottom: 43px;
-
-        // @media (min-width: 1024px){
-        //     display: flex;
-        //     justify-content: center;
-        // }
     }
 
     .fa-heart {
@@ -97,24 +95,11 @@ main{
         }
     }
 
-    // .coeur{
-    //     position: relative;
-    //     right: -340px;
-    //     bottom: 80px;
-
-    //     @media (min-width: 1024px){
-    //         right: -530px;
-    //     }
-    // }
 
     h2{
         font-family: Roboto;
         font-weight: 100;
         font-size: 16px;
-        // text-decoration: underline;
-        // text-decoration-color:#99E2D0;
-        // padding-bottom: 12px;
-        // padding-left: 10px;
         margin-left: 10px;
         border-bottom: 2px solid;
         border-color: var(--third-color);
@@ -141,47 +126,42 @@ main{
 
     .entree1{
         animation: entrees 2s;
-        // animation-duration: 2s;
     }
 
     .entree2{
         animation: entrees 2s;
-        // animation-duration: 2s;
     }
 
     .entree3{
         animation: entrees 2s;
-        // animation-duration: 2s;
+    }
+
+    .entree4{
+        animation: entrees 2s;
     }
 
     .plat1{
         animation: plats 3s;
-        // animation-duration: 2s;
     }
 
     .plat2{
         animation: plats 3s;
-        // animation-duration: 2s;
     }
 
     .plat3{
         animation: plats 3s;
-        // animation-duration: 2s;
     }
 
     .dessert1{
         animation: desserts 4s;
-        // animation-duration: 2s;
     }
 
     .dessert2{
         animation: desserts 4s;
-        // animation-duration: 2s;
     }
 
     .dessert3{
         animation: desserts 4s;
-        // animation-duration: 2s;
     }
 
     @keyframes entrees {
@@ -239,10 +219,8 @@ main{
         background: var(--Background, #F6F6F6);
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
         width: 349px;
-        // height: 69px;
         display: flex;
         flex-direction: row;
-        // justify-content: flex-start;
         justify-content: space-between;
         margin-top: 12px;
         font-family: 'Roboto';
@@ -283,19 +261,7 @@ main{
                 text-overflow: ellipsis;
                 white-space: nowrap;
             }
-        
-
-            // p{
-            //     padding-right: 15px;
-            //     margin: 0px;
-            //     width: 50%;
-            // }
-
         }
-
-        // div {
-        //     display: flex;
-        // }
 
         .prix{
             padding: 0px;
@@ -309,7 +275,6 @@ main{
             justify-content: space-evenly;
             display: flex;
             width: 59px;
-            // height: 69px;
             align-items: center;
             border-radius: 0px 20px 20px 0px;
             width: 0;
@@ -351,21 +316,14 @@ main{
           box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
         }
 
+        @media (min-width: 769px){
+            margin-left: 0px;
+        }
+
         @media (min-width: 1024px){
+            margin-left: 85px;
             position: relative;
             left: 150px;
         }
-      
-      
     }
-}
-
-
-
-@media (min-width: 1024px){
-            
-        }
-
-@media (min-width: 769px){
-
 }

@@ -75,7 +75,7 @@ footer img {
 
 footer .texte {
   display: flex;
-  justify-content: baseline;
+  justify-content: center;
 }
 
 footer ul {

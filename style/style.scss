@@ -3,10 +3,10 @@
 
 @keyframes loader{
   0% {opacity:0;
-      display: 0;}
+  }
   
   25% {opacity: 0;
-      display: 0;}
+  }
   
   100% { opacity: 1;}
 }
@@ -128,7 +128,6 @@ header nav {
   padding-left: 20px;
   animation: loader 5s;
    ::after{
-    opacity: 2s;
     animation-fill-mode: forwards;}
     
   @media (min-width: 769px){
@@ -136,8 +135,24 @@ header nav {
     }
   
   @media (min-width: 1024px){
-      width: 100%;
-      text-align: left;     
+    display: flex;
+    height: 228px;
+    text-align: left;
+    place-content: center;     
+  }
+
+  .fonctionnement-titre{
+    width: 1012px;
+  }
+
+  h2{
+    @media (min-width: 769px){
+      text-align: center;
+    }
+  
+  @media (min-width: 1024px){
+    text-align: left;
+  }
   }
   
   ol{
@@ -249,7 +264,11 @@ header nav {
     display: flex;
     align-self: stretch;
     flex-direction: column;
-    width: 100%;
+
+    @media (min-width: 1024px){
+      width: 1100px;
+      place-self: center;
+    }
 
     .restaurant-cards{
 

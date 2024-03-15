@@ -75,7 +75,7 @@ footer img {
 
 footer .texte {
   display: flex;
-  justify-content: baseline;
+  justify-content: center;
 }
 
 footer ul {
@@ -113,11 +113,9 @@ footer li {
 @keyframes loader {
   0% {
     opacity: 0;
-    display: 0;
   }
   25% {
     opacity: 0;
-    display: 0;
   }
   100% {
     opacity: 1;
@@ -249,7 +247,6 @@ section button:hover {
 }
 
 .fonctionnement ::after {
-  opacity: 2s;
   animation-fill-mode: forwards;
 }
 
@@ -261,7 +258,25 @@ section button:hover {
 
 @media (min-width: 1024px) {
   .fonctionnement {
-    width: 100%;
+    display: flex;
+    height: 228px;
+    text-align: left;
+    place-content: center;
+  }
+}
+
+.fonctionnement .fonctionnement-titre {
+  width: 1012px;
+}
+
+@media (min-width: 769px) {
+  .fonctionnement h2 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fonctionnement h2 {
     text-align: left;
   }
 }
@@ -379,7 +394,13 @@ section button:hover {
   display: flex;
   align-self: stretch;
   flex-direction: column;
-  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .section-restaurant .container-restaurant {
+    width: 1100px;
+    place-self: center;
+  }
 }
 
 @media (min-width: 769px) {

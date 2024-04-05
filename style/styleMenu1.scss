@@ -12,13 +12,11 @@ header{
     img{
         display: flex;
         align-items: center;
-        // padding-right: 89px;
         padding-right: 16px;
         padding-bottom: 13px;
         padding-top: 20px;
         position: relative;
         top: -45px;
-        // left: 100px;
         left: 16px;
         
         @media (min-width: 1025px){
@@ -123,7 +121,6 @@ main{
         border-color: var(--third-color);
         width: 10%;
         position: relative;
-        // right: 195px;
         right: 16px;
         bottom: 20px;
 

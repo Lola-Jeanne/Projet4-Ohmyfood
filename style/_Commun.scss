@@ -44,9 +44,7 @@
     background-color: var(--dark-gray);
     color: white;
     padding: 22px 25px 22px 25px;
-    // width: 100%;
     width: auto;
-    // margin-top: -105px;
 
     @media (min-width: 768px) and (max-width: 1024px){
       display: flex;
@@ -101,4 +99,3 @@
       }
     }
   }
-  

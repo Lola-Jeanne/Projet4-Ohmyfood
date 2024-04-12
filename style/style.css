@@ -244,6 +244,8 @@ section button:hover {
 }
 
 .fonctionnement {
+  display: flex;
+  text-align: -webkit-center;
   padding-left: 20px;
   animation: loader 5s;
 }
@@ -269,6 +271,10 @@ section button:hover {
 
 .fonctionnement .fonctionnement-titre {
   width: 1012px;
+}
+
+.fonctionnement h2 {
+  text-align: left;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -304,6 +310,7 @@ section button:hover {
   counter-increment: listes;
   margin-top: 25px;
   align-items: center;
+  width: 90%;
 }
 
 .liste-home .fa-solid {
@@ -378,6 +385,7 @@ section button:hover {
   margin-bottom: 0px;
   font-family: 'Roboto';
   font-weight: 700;
+  text-align: left;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -394,13 +402,14 @@ section button:hover {
 
 .section-restaurant .container-restaurant {
   display: flex;
-  align-self: stretch;
   flex-direction: column;
+  padding-left: 20px;
+  text-align: -webkit-center;
 }
 
 @media (min-width: 1025px) {
   .section-restaurant .container-restaurant {
-    width: 1100px;
+    width: 100%;
     place-self: center;
   }
 }
@@ -429,14 +438,12 @@ section button:hover {
 
 .section-restaurant .container-restaurant article {
   margin-top: 33px;
-  width: 340px;
+  width: 90%;
   height: 251px;
   display: flex;
   flex-wrap: wrap;
   border-radius: 15px;
   background: white;
-  align-items: center;
-  margin-left: 35px;
   margin-bottom: 30px;
   padding-bottom: 77px;
   position: relative;
@@ -462,7 +469,7 @@ section button:hover {
   border-radius: 2px;
   width: 80px;
   position: absolute;
-  left: 248px;
+  left: 455px;
   top: 13px;
   display: flex;
   justify-content: center;
@@ -482,6 +489,7 @@ section button:hover {
   padding-bottom: 10px;
   height: 77px;
   width: 100%;
+  text-align: left;
 }
 
 .section-restaurant .container-restaurant .card-content .card-title {
@@ -496,28 +504,19 @@ section button:hover {
 }
 
 .section-restaurant .container-restaurant .card-content .coeur-nv {
+  padding-right: 30px;
   position: relative;
-  left: 220px;
   bottom: 60px;
-}
-
-@media (min-width: 1025px) {
-  .section-restaurant .container-restaurant .card-content .coeur-nv {
-    left: 385px;
-  }
+  display: flex;
+  justify-content: right;
 }
 
 .section-restaurant .container-restaurant .card-content .coeur {
+  padding-right: 30px;
   position: relative;
-  width: 100%;
   bottom: 60px;
-  left: 220px;
-}
-
-@media (min-width: 1025px) {
-  .section-restaurant .container-restaurant .card-content .coeur {
-    left: 385px;
-  }
+  display: flex;
+  justify-content: right;
 }
 
 footer {
